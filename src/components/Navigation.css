@@ -1,0 +1,39 @@
+/* 导航栏 - 自适应 */
+.navigation {
+  height: 64px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.navigation-left {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bell-btn {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+}
+
+.share-btn {
+  height: 36px;
+  border-radius: 6px;
+  font-size: 14px;
+}

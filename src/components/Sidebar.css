@@ -1,0 +1,101 @@
+/* 左侧侧边栏 - 基于 1365*928 自适应 */
+.sidebar {
+  width: 18.67%; /* 255/1365 ≈ 18.67% */
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e8e8e8;
+}
+
+/* 顶部 - 64px */
+.sidebar-top {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.logo-box {
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.logo-letter {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.logo-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* 中间 - 平铺 */
+.sidebar-middle {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-menu {
+  border: none !important;
+  background: transparent !important;
+}
+
+.sidebar-menu .ant-menu-item {
+  margin: 4px 8px !important;
+  border-radius: 6px !important;
+}
+
+/* 底部 - 81px */
+.sidebar-bottom {
+  height: 81px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.user-avatar {
+  flex-shrink: 0;
+}
+
+.user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.plan {
+  font-size: 12px;
+  color: #666;
+}
+
+.arrow-icon {
+  color: #999;
+  font-size: 12px;
+  flex-shrink: 0;
+}

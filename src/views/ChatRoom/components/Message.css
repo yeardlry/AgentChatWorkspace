@@ -1,0 +1,349 @@
+/* 消息通用样式 */
+.message-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+/* 用户消息 - 靠右 */
+.user-message {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+/* AI消息 - 靠左 */
+.ai-message {
+  margin-right: auto;
+}
+
+/* 消息气泡 */
+.message-bubble {
+  background-color: rgb(249, 250, 251);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* AI 头像 */
+.ai-avatar {
+  background-color: #000 !important;
+  flex-shrink: 0;
+}
+
+.ai-avatar-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 用户头像 */
+.message-avatar {
+  flex-shrink: 0;
+}
+
+.message-avatar.center {
+  align-self: center;
+}
+
+.message-avatar.top {
+  align-self: flex-start;
+}
+
+/* 消息内容容器 - 用户消息 */
+.user-message .message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-message .message-content.center {
+  justify-content: center;
+}
+
+.user-message .message-content.top {
+  justify-content: flex-start;
+}
+
+/* 文本消息 */
+.message-text {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* 图片消息 */
+.message-image {
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.message-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* 图片加载中 */
+.message-image-loading {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+/* 按钮列表 */
+.message-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.message-button {
+  padding: 8px 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.message-button:hover {
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+}
+
+/* 卡片消息 */
+.message-card {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 200px;
+}
+
+/* ===== 新增组件样式 ===== */
+
+/* 网站链接卡片 */
+.message-weblinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weblinks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.weblink-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.weblink-card:hover {
+  background-color: #fafafa;
+  border-color: #d9d9d9;
+}
+
+.weblink-favicon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.weblink-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.weblink-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.weblink-desc {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.weblink-url {
+  font-size: 12px;
+  color: #1890ff;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 操作按钮 */
+.message-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.action-buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.action-button {
+  border-radius: 6px;
+}
+
+/* 统计组件 */
+.message-statistic {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statistics-container {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.statistic-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  min-width: 150px;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.statistic-trend {
+  margin-top: 8px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.statistic-trend.trend-up {
+  color: #ff4d4f;
+}
+
+.statistic-trend.trend-down {
+  color: #52c41a;
+}
+
+/* 表格组件 */
+.message-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message-data-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 时间线组件 */
+.message-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message-timeline-list {
+  padding: 0;
+}
+
+.timeline-item-content {
+  padding: 4px 0;
+}
+
+/* 图片预览背景加深 */
+.ant-image-preview .ant-image-preview-mask {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.timeline-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.timeline-desc {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.timeline-time {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* 组合消息 */
+.message-composite {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 消息内的输入动画（不带头像） */
+.typing-indicator-inline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.typing-indicator-inline span {
+  width: 6px;
+  height: 6px;
+  background-color: #999;
+  border-radius: 50%;
+  animation: typing-bounce 1.4s infinite ease-in-out;
+}
+
+.typing-indicator-inline span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-indicator-inline span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator-inline span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing-bounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
